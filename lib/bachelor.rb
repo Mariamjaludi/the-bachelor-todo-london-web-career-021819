@@ -71,7 +71,7 @@ def get_average_age_for_season(data, season)
     #if key == season
       #while i < val.length
         val[i].each do |k2, v2|
-
+          binding.pry
         end
     #end
   #end
