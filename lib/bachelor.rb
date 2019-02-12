@@ -38,14 +38,18 @@ end
 
 def count_contestants_by_hometown(data, hometown)
   # code here
+  # data = { season2: [{name: str, age: str, home: str}, {name: str, age: str, home: str}], season3: [{name: str, age: str, home: str}, {name: str, age: str, home: str}]}
   counter = 0
   i = 0
   data.each do |key, val|
-    while i < val.length
-      if val[i]["hometown"] == hometown
-        counter += 1
+    val.each do |k2, v2|
+      binding.pry
+      while i < val.length
+        if val[i]["hometown"] == hometown
+          counter += 1
+        end
+        i += 1
       end
-      i += 1
     end
   end
   counter
