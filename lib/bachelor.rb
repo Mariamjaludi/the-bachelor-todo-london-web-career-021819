@@ -20,7 +20,6 @@ end
 
 def get_contestant_name(data, occupation) #data = { season: [array of hashes]}
   # code here
-  i = 0
   data.each do |key, val| # key is season, val is an array of hashes
     val.each do |k2|
       #binding.pry
@@ -30,7 +29,7 @@ def get_contestant_name(data, occupation) #data = { season: [array of hashes]}
     end
   end
 end
-end
+
 
 def count_contestants_by_hometown(data, hometown)
   # code here
