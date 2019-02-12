@@ -46,7 +46,7 @@ def count_contestants_by_hometown(data, hometown)
       k2.each do |k3, v3|
         
       binding.pry
-      
+
       while i < val.length
         if val[i]["hometown"] == hometown
           counter += 1
