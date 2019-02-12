@@ -58,11 +58,10 @@ def get_occupation(data, hometown)
   # code here
   i = 0
   data.each do |key, val| # key is season, val is an array of hashes
-    while i < val.length
-      if val[i]["hometown"] == hometown
-        return val[i][occupation]
+    data.each do |k2|
+      if k2["hometown"] == hometown
+        return k2["occupation"]
       end
-      i += 1
     end
   end
 end
