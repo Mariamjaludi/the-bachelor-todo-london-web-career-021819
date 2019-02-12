@@ -44,14 +44,15 @@ def count_contestants_by_hometown(data, hometown)
   data.each do |key, val|
     val.each do |k2|
       k2.each do |k3, v3|
-        
-      binding.pry
 
-      while i < val.length
-        if val[i]["hometown"] == hometown
-          counter += 1
+        binding.pry
+
+        while i < val.length
+          if val[i]["hometown"] == hometown
+            counter += 1
+          end
+          i += 1
         end
-        i += 1
       end
     end
   end
