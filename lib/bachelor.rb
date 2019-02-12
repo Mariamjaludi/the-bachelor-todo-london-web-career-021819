@@ -52,7 +52,7 @@ end
 
 def get_occupation(data, hometown)
   # code here
-  i = 0
+  
   data.each do |key, val| # key is season, val is an array of hashes
     val.each do |k2|
       #binding.pry
