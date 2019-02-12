@@ -58,7 +58,7 @@ def get_occupation(data, hometown)
   # code here
   i = 0
   data.each do |key, val| # key is season, val is an array of hashes
-    data.each do |k2|
+    val.each do |k2|
       binding.pry
       if k2["hometown"] == hometown
         return k2["occupation"]
