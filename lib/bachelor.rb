@@ -62,6 +62,7 @@ def get_occupation(data, hometown)
       if val[i]["hometown"] == hometown
         return val[i][occupation]
       end
+      i += 1
     end
   end
 end
