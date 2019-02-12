@@ -20,6 +20,7 @@ end
 
 def get_contestant_name(data, occupation) #data = { season: [array of hashes]}
   # code here
+=begin
   i = 0
   str = ""
   data.each do |key, val| #key = season, val = [{}, {}, {}]
@@ -32,7 +33,7 @@ def get_contestant_name(data, occupation) #data = { season: [array of hashes]}
       i += 1
     end
   end
-
+=end
 end
 
 def count_contestants_by_hometown(data, hometown)
