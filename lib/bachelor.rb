@@ -72,7 +72,7 @@ def get_average_age_for_season(data, season)
     binding.pry
     if key == season
       while i < val.length
-        sum = sum + val[i]["age"]
+        sum = sum + val[i]["age"].to_i
         counter += 1
         i += 1
       end
